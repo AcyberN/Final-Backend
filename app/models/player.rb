@@ -1,4 +1,4 @@
 class Player < ActiveRecord::Base
 
-    has_many :positions
+    belongs_to :team
 end

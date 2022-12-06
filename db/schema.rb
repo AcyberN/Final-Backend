@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_06_190825) do
+ActiveRecord::Schema.define(version: 2022_12_06_211641) do
 
   create_table "players", force: :cascade do |t|
     t.string "first_name"
@@ -18,11 +18,12 @@ ActiveRecord::Schema.define(version: 2022_12_06_190825) do
     t.string "nationality"
     t.integer "height"
     t.string "club"
-    t.integer "position_id"
+    t.string "position"
+    t.integer "team_id"
   end
 
-  create_table "positions", force: :cascade do |t|
-    t.string "position"
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
   end
 
 end

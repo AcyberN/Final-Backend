@@ -7,7 +7,8 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.string :nationality
       t.integer :height 
       t.string :club 
-      t.integer :position_id
+      t.string :position
+      t.integer :team_id
 
 
     end
